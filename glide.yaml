@@ -1,0 +1,27 @@
+package: github.com/guineveresaenger/meters
+import:
+- package: github.com/kubernetes-incubator/custom-metrics-apiserver
+  subpackages:
+  - pkg/cmd
+  - pkg/provider
+- package: k8s.io/apimachinery
+  subpackages:
+  - pkg/api/errors
+  - pkg/api/meta
+  - pkg/api/resource
+  - pkg/apis/meta/v1
+  - pkg/labels
+  - pkg/runtime
+  - pkg/runtime/schema
+  - pkg/util/wait
+- package: k8s.io/client-go
+  subpackages:
+  - dynamic
+- package: k8s.io/component-base
+  subpackages:
+  - logs
+- package: k8s.io/klog
+- package: k8s.io/metrics
+  subpackages:
+  - pkg/apis/custom_metrics
+  - pkg/apis/external_metrics
