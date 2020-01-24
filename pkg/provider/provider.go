@@ -12,20 +12,20 @@ type iceCreamMetricsProvider struct {
 
 func (ic *iceCreamMetricsProvider) ListAllMetrics() []provider.CustomMetricInfo {
 	return []provider.CustomMetricInfo{
-		// these are mostly arbitrary examples
+		// these are mostly delicious examples
 		{
 			GroupResource: schema.GroupResource{Group: "", Resource: "pods"},
-			Metric:        "packets-per-second",
+			Metric:        "scoops-per-second",
 			Namespaced:    true,
 		},
 		{
 			GroupResource: schema.GroupResource{Group: "", Resource: "services"},
-			Metric:        "connections-per-second",
+			Metric:        "sprinkles-per-second",
 			Namespaced:    true,
 		},
 		{
 			GroupResource: schema.GroupResource{Group: "", Resource: "namespaces"},
-			Metric:        "work-queue-length",
+			Metric:        "whipped-cream",
 			Namespaced:    false,
 		},
 	}
